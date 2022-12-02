@@ -34,12 +34,18 @@
     margin-bottom: 2rem;
   }
   &__button {
-    background-color: red;
+    background: red;
     border: none;
+    width: 6rem;
     color: white;
     padding: 0.5rem;
+    padding-left: 1rem;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
+    &:hover {
+      background-color: #571c42;
+      cursor: pointer;
+    }
   }
   &__learn {
     color: #c4c4c4;
