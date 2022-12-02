@@ -1,9 +1,10 @@
 import {useState} from "react";
-import ea from "../../assets/images/ea.jpg";
-import question from "../../assets/images/question.jpg"
-import user from "../../assets/images/user.jpg";
+import ea from "../../assets/icons/group.svg";
+import question from "../../assets/icons/question.svg"
+import user from "../../assets/icons/person.svg";
+import accessiblility from "../../assets/icons/Web Accessibility.svg";
 import sandwitch from "../../assets/images/sandwitch.jpg"
-import logo from "../../assets/images/logo.jpg";
+import logo from "../../assets/icons/electronic-arts.png";
 import close from "../../assets/images/close.jpg";
 import dropDown from "../../assets/images/drop-down.jpg";
 import dot from "../../assets/images/dot.jpg";
@@ -30,73 +31,85 @@ export default function Header (){
           <header className="header__one">
             <nav className="header__first-nav">
               <li className="header__list">
-                <img src={user} alt="user"></img>
+                <img
+                  src={accessiblility}
+                  alt="accessiblility"
+                  className="header__icon-accessiblility"
+                ></img>
+              </li>
+
+              <li className="header__list">
+                <img src={user} alt="user" className="header__icon-user"></img>
               </li>
               <li className="header__list">
-                <img src={question} alt="question"></img>
+                <img
+                  src={question}
+                  alt="question"
+                  className="header__icon-question"
+                ></img>
               </li>
               <li className="header__list">
-                <img src={ea} alt="EA logo"></img>
+                <img src={ea} alt="EA logo" className="header__icon-ea"></img>
               </li>
             </nav>
           </header>
 
-          {secondHeader&&
-          <section className="header__two">
-            <button onClick={toggleOpen}>
-              <img
-                src={sandwitch}
-                alt="select bars"
-                className="header__sandwitch"
-              ></img>
-              <img src={dot} alt="dot icon" className="header__dot"></img>
-            </button>
-            <img src={logo} alt="logo" className="header__logo"></img>
+          {secondHeader && (
+            <section className="header__two">
+              <button onClick={toggleOpen}>
+                <img
+                  src={sandwitch}
+                  alt="select bars"
+                  className="header__sandwitch"
+                ></img>
+                <img src={dot} alt="dot icon" className="header__dot"></img>
+              </button>
+              <img src={logo} alt="logo" className="header__logo"></img>
 
-            <nav className="header__nav-desktop">
-              <li className="header__nav-desktop--li">
-                <p className="header__li-inline">Games</p>
-                <img
-                  className="header__li-inline header__li-drop-down"
-                  src={dropDown}
-                  alt="drop down"
-                ></img>
-              </li>
-              <li className="header__nav-desktop--li">
-                <p className="header__li-inline">More Experiences</p>
-                <img
-                  className="header__li-inline header__li-drop-down"
-                  src={dropDown}
-                  alt="drop down"
-                ></img>
-              </li>
-              <li className="header__nav-desktop--li">
-                <p className="header__li-inline">About</p>
-                <img
-                  className="header__li-inline header__li-drop-down"
-                  src={dropDown}
-                  alt="drop down"
-                ></img>
-              </li>
-              <li className="header__nav-desktop--li">
-                <p className="header__li-inline">Commiments</p>
-                <img
-                  className="header__li-inline header__li-drop-down"
-                  src={dropDown}
-                  alt="drop down"
-                ></img>
-              </li>
-              <li className="header__nav-desktop--li">
-                <p className="header__li-inline">Resources</p>
-                <img
-                  className="header__li-inline header__li-drop-down"
-                  src={dropDown}
-                  alt="drop down"
-                ></img>
-              </li>
-            </nav>
-          </section>
-          }
+              <nav className="header__nav-desktop">
+                <li className="header__nav-desktop--li">
+                  <p className="header__li-inline">Games</p>
+                  <img
+                    className="header__li-inline header__li-drop-down"
+                    src={dropDown}
+                    alt="drop down"
+                  ></img>
+                </li>
+                <li className="header__nav-desktop--li">
+                  <p className="header__li-inline">More Experiences</p>
+                  <img
+                    className="header__li-inline header__li-drop-down"
+                    src={dropDown}
+                    alt="drop down"
+                  ></img>
+                </li>
+                <li className="header__nav-desktop--li">
+                  <p className="header__li-inline">About</p>
+                  <img
+                    className="header__li-inline header__li-drop-down"
+                    src={dropDown}
+                    alt="drop down"
+                  ></img>
+                </li>
+                <li className="header__nav-desktop--li">
+                  <p className="header__li-inline">Commiments</p>
+                  <img
+                    className="header__li-inline header__li-drop-down"
+                    src={dropDown}
+                    alt="drop down"
+                  ></img>
+                </li>
+                <li className="header__nav-desktop--li">
+                  <p className="header__li-inline">Resources</p>
+                  <img
+                    className="header__li-inline header__li-drop-down"
+                    src={dropDown}
+                    alt="drop down"
+                  ></img>
+                </li>
+              </nav>
+            </section>
+          )}
           {sideBar && (
             <aside className="header__left-bar">
               <div className="header__top-wrapper">
@@ -112,11 +125,10 @@ export default function Header (){
               </nav>
             </aside>
           )}
-           
-           <section className={`${sideBar?"header__grey-out":""}`}>
+
+          <section className={`${sideBar ? "header__grey-out" : ""}`}>
             <Main />
-           </section>
-      
+          </section>
         </section>
       </>
     );
