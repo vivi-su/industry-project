@@ -3,7 +3,7 @@ import "./Post.scss";
 // import likesIcon from "../../assets/icons/heart.svg";
 // import commentsIcon from "../../assets/icons/chat_bubble.svg";
 import ApexGameImg from "../../assets/images/image 4.png";
-import Modal from "../modal/Modal-backup";
+import Modal from "../modal/Modal";
 import { useState } from "react";
 import chat from "../../assets/images/chat_bubble.png";
 import heart from "../../assets/images/heart.png";
