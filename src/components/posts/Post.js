@@ -9,7 +9,6 @@ import heart from "../../assets/images/heart.png";
 import heartfilled from "../../assets/images/heart-filled.png";
 import search from "../../assets/images/magnifyingglass.png";
 
-
 const Post = () => {
   const [openModal, setOpenModal] = useState(false);
   const [like, setLike] = useState(999);
@@ -30,9 +29,7 @@ const Post = () => {
           </ol>
         </section>
         <section className="post__items-wrap">
-          <div
-            className="post__items-hero"
-          >
+          <div className="post__items-hero">
             <section className="post__left-feature">
               <img
                 src={ApexGameImg}
@@ -45,8 +42,13 @@ const Post = () => {
                     src={commentsIcon}
                     className="post__icon1 post__icon1--chat "
                     alt="chat"
+                    onClick={() => setOpenModal(true)}
                   ></img>
-                  <span className="post__chat" alt="chat">
+                  <span
+                    className="post__chat"
+                    alt="chat"
+                    onClick={() => setOpenModal(true)}
+                  >
                     9.3k Comments
                   </span>
 
@@ -119,7 +121,6 @@ const Post = () => {
               <p className="post__additional-info-popular-hubs-list">AFK</p>
             </div>
           </aside>
-
         </section>
       </main>
       <Modal
