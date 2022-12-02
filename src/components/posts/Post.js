@@ -7,10 +7,13 @@ import Modal from "../modal/Modal";
 import { useState } from "react";
 import chat from "../../assets/images/chat_bubble.png";
 import heart from "../../assets/images/heart.png";
+import fullheart from "../../assets/icons/full-heart.png";
 import search from "../../assets/images/magnifyingglass.png";
+
 
 const Post = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [heartIcon, setHeartIcon] = useState(false);
 
   return (
     <>
@@ -32,20 +35,51 @@ const Post = () => {
               setOpenModal(true);
             }}
           >
-            <div className="post__upper-video">
-              <img src={ApexGameImg} className="post__video-img"></img>
-            </div>
-            <div className="post__lower">
-              <div className="post__comm-like">
-                <p className="post__comm1">
-                  <img src={chat} className="post__icon1"></img>9.3k Comments
-                </p>
-                <p className="post__heart1">
-                  <img src={heart} className="post__icon1"></img>1.8k
-                </p>
+            <section className="post__left-feature">
+              <img
+                src={ApexGameImg}
+                className="post__video-img"
+                alt="video"
+              ></img>
+              <div className="post__lower">
+                <div className="post__comm-like">
+                  <img src={chat} className="post__icon1" alt="chat"></img>
+                  <span className="post__chat" alt="chat">
+                    9.3k Comments
+                  </span>
+
+                  <div className="post__heart1">
+                    {heartIcon ? (
+                      <button
+                        onClick={() => {
+                          setHeartIcon(false);
+                        }}
+                      >
+                        <img
+                          src={fullheart}
+                          className="post__icon1"
+                          alt="heart"
+                        ></img>
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => {
+                          setHeartIcon(true);
+                        }}
+                      >
+                        <img
+                          src={heart}
+                          className="post__icon1"
+                          alt="heart"
+                        ></img>
+                      </button>
+                    )}
+                    1.8k
+                  </div>
+                </div>
+                <div className="post__game-text">Apex-Huntress</div>
               </div>
-              <div className="post__game-text">Apex-Huntress</div>
-            </div>
+            </section>
           </div>
 
           <aside className="post__additional-info">
@@ -196,12 +230,12 @@ const Post = () => {
           </div>
         </section>
       </main>
-      <Modal
+      {/* <Modal
         open={openModal}
         onClose={() => {
           setOpenModal(false);
         }}
-      />
+      /> */}
     </>
   );
 };

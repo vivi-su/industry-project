@@ -1,3 +1,9 @@
+@use "../../styles/partials/reset" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+
 .post {
   background-color: #1d2033;
   padding: 1rem 0;
@@ -18,6 +24,12 @@
       justify-content: space-evenly;
       color: white;
     }
+  }
+
+  &__left-feature{
+    @include flex(column,space-between,space-between);
+    width:100%;
+    height:100%;
   }
 
   &__items {
@@ -44,6 +56,7 @@
       padding: 1rem;
       object-fit: contain;
       width: 100%;
+  
     }
     &-info-bar {
       display: flex;
@@ -74,12 +87,18 @@
 
   &__video-img {
     width: 100%;
+    height:80%;
+    background-size: cover;
     border-radius: 0.25rem 0.25rem 0 0;
+    background-color: red;
   }
+
   &__lower {
+    width:100%;
     background-image: linear-gradient(to right, #361c52, #571c42);
     padding: 1rem 0.5rem 0 1rem;
     border-radius: 0 0 0.25rem 0.25rem;
+    flex-grow: 1;
   }
   &__comm-like {
     display: flex;
@@ -87,12 +106,11 @@
     border-bottom: 1px solid white;
     justify-content: flex-end;
   }
-  &__comm1 {
-    width: 25%;
-    color: white;
-    display: flex;
-    align-items: center;
+
+  &__chat{
+    margin-right: 0.5rem;
   }
+
   &__icon1 {
     padding-right: 0.3rem;
     &:hover {
