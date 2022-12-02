@@ -112,7 +112,15 @@
   }
 
   &__icon1 {
+
     padding-right: 0.3rem;
+
+    &--chat{
+    width:1.5rem;
+    height:1rem;
+    position:relative;
+    top:2px;
+    }
     &:hover {
       cursor: pointer;
       // opacity: 0;
