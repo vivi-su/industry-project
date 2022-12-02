@@ -6,30 +6,27 @@ import heart from "../../assets/images/heart.png";
 import { useState } from "react";
 
 const Modal = ({ open, onClose }) => {
-  const [comments, setComments] = useState([
-    {
-      avatar: URL(""),
-      usename: "Dion L.",
-      comment: "Brilliant!",
-    },
-    {
-      avatar: URL(""),
-      usename: "SlayerXXX",
-      comment: "Runnnnnnnn :o :o :o",
-    },
-    {
-      avatar: URL(""),
-      usename: "UnKnownSS",
-      comment: "Cool",
-    },
-  ]);
+  //   const [comments, setComments] = useState([
+  //     {
+  //       avatar: URL(""),
+  //       usename: "Dion L.",
+  //       comment: "Brilliant!",
+  //     },
+  //     {
+  //       avatar: URL(""),
+  //       usename: "SlayerXXX",
+  //       comment: "Runnnnnnnn :o :o :o",
+  //     },
+  //     {
+  //       avatar: URL(""),
+  //       usename: "UnKnownSS",
+  //       comment: "Cool",
+  //     },
+  //   ]);
   if (!open) return null;
-  const onSubmit = () => {
-    const newComment = {
-        
-    }
-    const commentArr = [...comments];
-  };
+  //   const onSubmit = () => {
+  //     const commentArr = [...comments];
+  //   };
 
   return (
     <div className="modal">
