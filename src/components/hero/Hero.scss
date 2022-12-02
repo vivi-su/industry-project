@@ -68,10 +68,16 @@
     color: white;
     margin-bottom: 1rem;
   }
+  &__img-text {
+    width: 32%;
+  }
   &__text {
     color: white;
     margin-top: 0.5rem;
     text-align: end;
+  }
+  &__img {
+    width: 100%;
   }
   &__image-roll {
     display: flex;
