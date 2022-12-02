@@ -1,0 +1,147 @@
+@use "../../styles/partials/reset" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header{
+
+    button{
+        all: unset;
+    }
+
+    &__one{
+    width:100%;
+    height:2rem;
+    background-color: #000000;
+    }
+
+    &__first-nav{
+      @include flex(row, flex-end, center);
+    }
+
+    &__list{
+        margin-left: 0.5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-right: 0.5rem;
+    }
+
+    &__two{
+     width:100%;
+    height:2.6rem;
+    background-color:#ffffff;
+     @include flex(row,flex-start,center);
+    }
+
+    &__nav-desktop{
+        @include flex(row,center,center);
+        visibility: hidden;
+
+        &--li{
+            margin-right: 0.8rem;
+        }
+    }
+
+    &__li-inline{
+        display: inline-block;
+    }
+
+    &__li-drop-down{
+        width:1rem;
+    }
+
+    &__left-bar{
+        width:100%;
+        position: absolute;
+        z-index:99999;
+        background-color: #ffffff;
+    }
+
+    &__grey-out{
+       position:fixed;
+       top:0;
+       left:0;
+       width:100%;
+       height:100vh;
+       background-color: rgba(0,0,0,0.7);
+
+    }
+
+    &__top-wrapper{
+    @include flex(row, space-between, center);
+    background-color: #eaeaea;
+    }
+
+    &__second-nav{
+        text-align: center;
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      
+    }
+
+    &__second-list{
+       border-bottom: 1px solid #000000;
+    }
+
+    &__dot{
+        display: none;
+        width:1rem;
+        position: relative;
+        top:0.25rem;
+    }
+
+    &__logo{
+        max-width:8rem;
+        width:100%;
+        margin-right:1rem;
+    }
+
+    &__icon-accessiblility{
+        width:1.3rem;
+        height:1.3rem;
+    }
+
+    &__icon-user{
+        width:1.3rem;
+        height:1.3rem;
+    }
+
+    &__icon-question{
+        width:1.5rem;
+        height:1.5rem;
+    }
+
+    &__icon-ea{
+        width:1.8rem;
+        height:1.8rem;
+    }
+
+}
+
+@include medium{
+    .header{
+        &__sandwitch{
+        display: none;
+        }
+
+        &__dot{
+        display: inline-block;
+        }
+
+        &__left-bar{
+        width:50%;
+        }
+    }
+}
+
+
+@include large{
+    .header{
+        &__nav-desktop{
+        visibility:visible;
+        }
+    }
+
+}
