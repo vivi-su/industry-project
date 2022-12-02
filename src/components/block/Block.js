@@ -7,8 +7,21 @@ import chat from "../../assets/images/chat_bubble.png";
 import heart from "../../assets/images/heart.png";
 import video from "../../assets/images/video.png";
 import play from "../../assets/images/Play Button.png";
-
+import heartfilled from "../../assets/images/heart-filled.png";
+import { useState } from "react";
+import React from "react";
 export default function Block() {
+  const [like1, setLike] = useState(83);
+  const [like2, setLike2] = useState(17);
+  const [like3, setLike3] = useState(13);
+  const [like4, setLike4] = useState(17);
+  const [like5, setLike5] = useState(99);
+  const [clickMode1, setClickMode1] = useState(false);
+  const [clickMode2, setClickMode2] = useState(false);
+  const [clickMode3, setClickMode3] = useState(false);
+  const [clickMode4, setClickMode4] = useState(false);
+  const [clickMode5, setClickMode5] = useState(false);
+
   return (
     <section className="block">
       <div className="block__boxes">
@@ -32,8 +45,15 @@ export default function Block() {
                 <img src={chat} className="block__icon1"></img>127 Comments
               </p>
               <p className="block__heart">
-                <img src={heart} className="block__icon1"></img>
-                83
+                <img
+                  className="block__icon1"
+                  onClick={() => {
+                    setClickMode1(true);
+                    setLike(like1 + 1);
+                  }}
+                  src={clickMode1 ? heartfilled : heart}
+                ></img>
+                {like1}
               </p>
             </div>
             <div className="block__game-text">Adventure47</div>
@@ -60,7 +80,15 @@ export default function Block() {
                 <img src={chat} className="block__icon1"></img>22 Comments
               </p>
               <p className="block__heart">
-                <img src={heart} className="block__icon1"></img>17
+                <img
+                  className="block__icon1"
+                  onClick={() => {
+                    setClickMode2(true);
+                    setLike2(like2 + 1);
+                  }}
+                  src={clickMode2 ? heartfilled : heart}
+                ></img>
+                {like2}
               </p>
             </div>
             <div className="block__game-text">Start_the_Hunt</div>
@@ -87,7 +115,15 @@ export default function Block() {
                 <img src={chat} className="block__icon1"></img>18 Comments
               </p>
               <p className="block__heart">
-                <img src={heart} className="block__icon1"></img>13
+                <img
+                  className="block__icon1"
+                  onClick={() => {
+                    setClickMode3(true);
+                    setLike3(like3 + 1);
+                  }}
+                  src={clickMode3 ? heartfilled : heart}
+                ></img>
+                {like3}
               </p>
             </div>
             <div className="block__game-text">Sims4Lyfe</div>
@@ -112,7 +148,15 @@ export default function Block() {
                 <img src={chat} className="block__icon1"></img>22 Comments
               </p>
               <p className="block__heart">
-                <img src={heart} className="block__icon1"></img>17
+                <img
+                  className="block__icon1"
+                  onClick={() => {
+                    setClickMode4(true);
+                    setLike4(like4 + 1);
+                  }}
+                  src={clickMode4 ? heartfilled : heart}
+                ></img>
+                {like4}
               </p>
             </div>
             <div className="block__game-text">Scared_Straight3</div>
@@ -130,7 +174,15 @@ export default function Block() {
               <img src={chat} className="block__icon1"></img>21 Comments
             </p>
             <p className="block__heart1">
-              <img src={heart} className="block__icon1"></img>99
+              <img
+                className="block__icon1"
+                onClick={() => {
+                  setClickMode5(true);
+                  setLike5(like5 + 1);
+                }}
+                src={clickMode5 ? heartfilled : heart}
+              ></img>
+              {like5}
             </p>
           </div>
           <div className="block__game-text">CityHunterxX</div>
