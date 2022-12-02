@@ -1,0 +1,81 @@
+@use "../../styles/partials/reset" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  &__title {
+    height: 3.5rem;
+    background-color: #f1f1f1;
+    color: white;
+    padding-top: 0.6rem;
+    padding-left: 1rem;
+    background-image: linear-gradient(to right, #361c52, #571c42);
+  }
+  &__text-sup {
+    color: #fe4747;
+  }
+  &__background-effect {
+    // background: linear-gradient(#add8e6, white);
+    background-color: #050a30;
+    padding: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__tag-line {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__hook {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  &__button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  &__learn {
+    color: #c4c4c4;
+    margin-bottom: 1rem;
+  }
+  &__search {
+    color: #c4c4c4;
+    display: flex;
+    border: 1px solid #c4c4c4;
+    padding: 0.3rem 5rem 0.3rem 1rem;
+    border-radius: 0.25rem;
+  }
+  &__search-logo {
+  }
+  &__search-text {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  &__trending {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__trending-title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    color: white;
+    margin-top: 0.5rem;
+    text-align: end;
+  }
+  &__image-roll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
