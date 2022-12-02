@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ea from "../../assets/icons/group.svg";
+import ea from "../../assets/icons/Group.svg";
 import question from "../../assets/icons/question.svg";
 import user from "../../assets/icons/person.svg";
 import accessiblility from "../../assets/icons/Web Accessibility.svg";

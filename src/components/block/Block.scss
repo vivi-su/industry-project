@@ -26,10 +26,13 @@
     padding-left: 0.8rem;
     color: white;
   }
-  // &__head {
-  // }
-  // &__description {
-  // }
+  &__head {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  &__description {
+    font-size: 16px;
+  }
   &__lower {
     background-image: linear-gradient(to right, #361c52, #571c42);
     padding: 1rem 0.5rem 0 1rem;
@@ -53,17 +56,20 @@
     color: white;
     display: flex;
     align-items: center;
+    font-size: 18px;
   }
   &__heart {
     width: 15%;
     color: white;
     display: flex;
     align-items: center;
+    font-size: 18px;
   }
   &__game-text {
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    font-size: 18px;
   }
   &__wide-block {
     border-radius: 0.25rem;
@@ -81,12 +87,14 @@
     color: white;
     display: flex;
     align-items: center;
+    font-size: 18px;
   }
   &__heart1 {
     width: 8%;
     color: white;
     display: flex;
     align-items: center;
+    font-size: 18px;
   }
   &__play-btn {
     position: absolute;
