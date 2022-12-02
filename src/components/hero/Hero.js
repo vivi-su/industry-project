@@ -14,7 +14,7 @@ export default function Hero() {
         <h3 className="hero__hook">
           Official content and Community for all EA Games.
         </h3>
-        <button className="hero__button">Join Now</button>
+        <div className="hero__button">Join Now</div>
         <h3 className="hero__learn">Learn more about EA Community HQ.</h3>
         <div className="hero__search">
           <img className="hero__search-logo" src={search} alt="searchbar"></img>
