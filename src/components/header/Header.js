@@ -112,6 +112,9 @@ export default function Header (){
             </aside>
           )}
            
+           <section className={`${sideBar?"header__grey-out":""}`}>
+            <Main />
+           </section>
       
         </section>
       </>
