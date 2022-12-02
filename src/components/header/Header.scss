@@ -98,9 +98,15 @@
         &__left-bar{
         width:50%;
         }
+    }
+}
 
+
+@include large{
+    .header{
         &__nav-desktop{
         visibility:visible;
         }
     }
+
 }
