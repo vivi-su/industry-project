@@ -42,6 +42,10 @@
   }
   &__icon1 {
     padding-right: 0.3rem;
+    &:hover {
+      cursor: pointer;
+      // opacity: 0;
+    }
   }
   &__comm {
     width: 25%;
@@ -64,6 +68,10 @@
     border-radius: 0.25rem;
     padding-bottom: 1rem;
   }
+  &__upper-video {
+    position: relative;
+  }
+
   &__video-img {
     width: 100%;
   }
@@ -78,5 +86,21 @@
     color: white;
     display: flex;
     align-items: center;
+  }
+  &__play-btn {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    &:hover {
+      animation: horizontalmove 0.8s ease-in-out infinite alternate;
+    }
+  }
+  @keyframes horizontalmove {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
   }
 }

@@ -7,6 +7,7 @@ import logo from "../../assets/images/logo.jpg";
 import close from "../../assets/images/close.jpg";
 import dropDown from "../../assets/images/drop-down.jpg";
 import dot from "../../assets/images/dot.jpg";
+import Main from "../main/Main";
 import "./Header.scss";
 
 export default function Header (){
@@ -112,6 +113,9 @@ export default function Header (){
             </aside>
           )}
            
+           <section className={`${sideBar?"header__grey-out":""}`}>
+            <Main />
+           </section>
       
         </section>
       </>

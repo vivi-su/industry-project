@@ -6,6 +6,7 @@ import img4 from "../../assets/images/image 18.png";
 import chat from "../../assets/images/chat_bubble.png";
 import heart from "../../assets/images/heart.png";
 import video from "../../assets/images/video.png";
+import play from "../../assets/images/Play Button.png";
 
 export default function Block() {
   return (
@@ -31,7 +32,8 @@ export default function Block() {
                 <img src={chat} className="block__icon1"></img>127 Comments
               </p>
               <p className="block__heart">
-                <img src={heart} className="block__icon1"></img>83
+                <img src={heart} className="block__icon1"></img>
+                83
               </p>
             </div>
             <div className="block__game-text">Adventure47</div>
@@ -120,6 +122,7 @@ export default function Block() {
       <div className="block__wide-block">
         <div className="block__upper-video">
           <img src={video} className="block__video-img"></img>
+          <img src={play} className="block__play-btn"></img>
         </div>
         <div className="block__lower">
           <div className="block__comm-like">
