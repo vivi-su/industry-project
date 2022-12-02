@@ -5,6 +5,9 @@ import commentsIcon from "../../assets/icons/chat_bubble.svg";
 import ApexGameImg from "../../assets/images/image 4.png";
 import Modal from "../modal/Modal";
 import { useState } from "react";
+import chat from "../../assets/images/chat_bubble.png";
+import heart from "../../assets/images/heart.png";
+import search from "../../assets/images/magnifyingglass.png";
 
 const Post = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -29,27 +32,19 @@ const Post = () => {
               setOpenModal(true);
             }}
           >
-            <img
-              className="post__items-img"
-              src={ApexGameImg}
-              alt="apex gaming images"
-            />
-            <div className="post__items-info-bar">
-              <p className="post__items-username">Apex-Huntress</p>
-              <div className="post__items-comments-likes-wrap">
-                <img
-                  src={commentsIcon}
-                  alt="comments icon"
-                  className="post__items-comments-icon"
-                />
-                <p className="post__items-comments-count">9.3k</p>
-                <img
-                  src={likesIcon}
-                  alt="likes icon"
-                  className="post__items-likes-icon"
-                />
-                <p className="post__items-likes-count">1.8k</p>
+            <div className="post__upper-video">
+              <img src={ApexGameImg} className="post__video-img"></img>
+            </div>
+            <div className="post__lower">
+              <div className="post__comm-like">
+                <p className="post__comm1">
+                  <img src={chat} className="post__icon1"></img>9.3k Comments
+                </p>
+                <p className="post__heart1">
+                  <img src={heart} className="post__icon1"></img>1.8k
+                </p>
               </div>
+              <div className="post__game-text">Apex-Huntress</div>
             </div>
           </div>
 
@@ -57,11 +52,29 @@ const Post = () => {
             <div className="post__additional-info-search-bars">
               <div className="post__additional-info-find-friends">
                 <p className="post__additional-info-text">Find Friends</p>
-                <textarea name="post__additional-info-search-field"></textarea>
+                <div className="post__additional-info-search">
+                  <img
+                    className="post__additional-info-logo"
+                    src={search}
+                    alt="searchbar"
+                  ></img>
+                  <p className="post__additional-info-search-textss">
+                    Search for friends
+                  </p>
+                </div>
               </div>
               <div className="post__additional-info-find-base">
                 <p className="post__additional-info-text"> Find Base and Hub</p>
-                <textarea name="post__additional-info-search-field"></textarea>
+                <div className="post__additional-info-search">
+                  <img
+                    className="post__additional-info-logo"
+                    src={search}
+                    alt="searchbar"
+                  ></img>
+                  <p className="post__additional-info-search-textss">
+                    Search for Hub
+                  </p>
+                </div>
               </div>
             </div>
             <div className="post__additional-info-popular-hubs">

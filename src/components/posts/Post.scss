@@ -31,6 +31,7 @@
       width: 65%;
       background-color: purple;
       color: white;
+      border-radius: 0.25rem;
       margin: 0.5rem;
     }
     background-color: purple;
@@ -70,18 +71,85 @@
       }
     }
   }
+
+  &__video-img {
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  &__lower {
+    background-image: linear-gradient(to right, #361c52, #571c42);
+    padding: 1rem 0.5rem 0 1rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+  &__comm-like {
+    display: flex;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid white;
+    justify-content: flex-end;
+  }
+  &__comm1 {
+    width: 25%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  &__icon1 {
+    padding-right: 0.3rem;
+    &:hover {
+      cursor: pointer;
+      // opacity: 0;
+    }
+  }
+  &__heart1 {
+    width: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  &__game-text {
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .post__additional-info {
   width: 30%;
   &-search-bars {
+    padding: 2rem;
     color: white;
-    background-color: purple;
+    background-image: linear-gradient(to right, #361c52, #571c42);
     margin: 0.5rem;
+    height: 47.5%;
+    border-radius: 0.25rem;
+  }
+  &-search {
+    color: #c4c4c4;
+    display: flex;
+    border: 1px solid #c4c4c4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  &-text {
+    margin-bottom: 0.5rem;
+  }
+  &-search-textss {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
   }
   &-popular-hubs {
     color: white;
-    background-color: purple;
+    background-image: linear-gradient(to right, #361c52, #571c42);
     margin: 0.5rem;
+    height: 47.5%;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    &-title {
+      color: white;
+    }
+    &-list {
+      color: red;
+    }
   }
 }
