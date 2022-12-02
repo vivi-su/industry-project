@@ -1,0 +1,82 @@
+@use "../../styles/partials/reset" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/color" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+
+.block {
+  background-color: #050a30;
+  padding: 2rem 1rem 0 1rem;
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    width: 49.2%;
+    margin-bottom: 1.5rem;
+  }
+  &__upper {
+    background-color: #231f20;
+    padding: 3rem 1rem;
+    display: flex;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  &__text-holder {
+    padding-left: 1rem;
+    color: white;
+  }
+  &__head {
+  }
+  &__description {
+  }
+  &__lower {
+    background-image: linear-gradient(to right, #361c52, #571c42);
+    padding: 1rem 0.5rem 0 1rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+  &__comm-like {
+    display: flex;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid white;
+    justify-content: flex-end;
+  }
+  &__icon1 {
+    padding-right: 0.3rem;
+  }
+  &__comm {
+    width: 25%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  &__heart {
+    width: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  &__game-text {
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  &__wide-block {
+    border-radius: 0.25rem;
+    padding-bottom: 1rem;
+  }
+  &__video-img {
+    width: 100%;
+  }
+  &__comm1 {
+    width: 15%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  &__heart1 {
+    width: 8%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+}
