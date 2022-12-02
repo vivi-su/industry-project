@@ -12,9 +12,9 @@
     width: 65%;
     &-list-item {
       &:first-child {
-        background-color: orange;
+        background-color: #fe4747;
         border-radius: 5px;
-        width: 4.5rem;
+        padding: 0 1rem;
       }
     }
 
@@ -26,10 +26,10 @@
     }
   }
 
-  &__left-feature{
-    @include flex(column,space-between,space-between);
-    width:100%;
-    height:100%;
+  &__left-feature {
+    @include flex(column, space-between, space-between);
+    width: 100%;
+    height: 100%;
   }
 
   &__items {
@@ -56,7 +56,6 @@
       padding: 1rem;
       object-fit: contain;
       width: 100%;
-  
     }
     &-info-bar {
       display: flex;
@@ -78,23 +77,25 @@
     &-comments {
       &-icon {
         padding-left: 0.5rem;
+        cursor: pointer;
       }
       &-count {
         padding-left: 0.5rem;
+        cursor: pointer;
       }
     }
   }
 
   &__video-img {
     width: 100%;
-    height:80%;
+    height: 80%;
     background-size: cover;
     border-radius: 0.25rem 0.25rem 0 0;
     background-color: red;
   }
 
   &__lower {
-    width:100%;
+    width: 100%;
     background-image: linear-gradient(to right, #361c52, #571c42);
     padding: 1rem 0.5rem 0 1rem;
     border-radius: 0 0 0.25rem 0.25rem;
@@ -107,23 +108,22 @@
     justify-content: flex-end;
   }
 
-  &__chat{
+  &__chat {
     margin-right: 0.5rem;
+    cursor: pointer;
   }
 
   &__icon1 {
-
     padding-right: 0.3rem;
 
-    &--chat{
-    width:1.5rem;
-    height:1rem;
-    position:relative;
-    top:2px;
+    &--chat {
+      width: 1.5rem;
+      height: 1rem;
+      position: relative;
+      top: 2px;
     }
     &:hover {
       cursor: pointer;
-      // opacity: 0;
     }
   }
   &__heart1 {
@@ -136,6 +136,7 @@
     color: white;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
   }
 }
 
