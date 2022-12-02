@@ -3,7 +3,15 @@
   padding: 1rem 0;
 
   &__header {
-    width: 70%;
+    width: 65%;
+    &-list-item {
+      &:first-child {
+        background-color: orange;
+        border-radius: 5px;
+        width: 4.5rem;
+      }
+    }
+
     &-list {
       display: flex;
       flex-wrap: wrap;
@@ -65,7 +73,15 @@
 }
 
 .post__additional-info {
-  color: white;
   width: 30%;
-  background-color: purple;
+  &-search-bars {
+    color: white;
+    background-color: purple;
+    margin: 0.5rem;
+  }
+  &-popular-hubs {
+    color: white;
+    background-color: purple;
+    margin: 0.5rem;
+  }
 }
