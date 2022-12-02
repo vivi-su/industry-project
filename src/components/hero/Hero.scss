@@ -11,6 +11,7 @@
     color: white;
     padding-top: 0.6rem;
     padding-left: 1rem;
+    font-size: 20px;
     background-image: linear-gradient(to right, #361c52, #571c42);
   }
   &__text-sup {
@@ -28,18 +29,21 @@
     color: white;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    font-size: 40px;
   }
   &__hook {
     color: white;
     margin-bottom: 2rem;
+    font-size: 20px;
   }
   &__button {
     background: red;
     border: none;
     width: 6rem;
     color: white;
+    font-size: 17px;
     padding: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 0.8rem;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
     &:hover {
@@ -48,21 +52,21 @@
     }
   }
   &__learn {
-    color: #c4c4c4;
+    color: white;
     margin-bottom: 1rem;
+    font-size: 19px;
   }
   &__search {
     color: #c4c4c4;
     display: flex;
-    border: 1px solid #c4c4c4;
+    border: 1px solid white;
     padding: 0.3rem 5rem 0.3rem 1rem;
     border-radius: 0.25rem;
   }
-  &__search-logo {
-  }
+
   &__search-text {
     margin-left: 0.5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
   }
   &__trending {
     padding-top: 1rem;
@@ -73,6 +77,7 @@
   &__trending-title {
     color: white;
     margin-bottom: 1rem;
+    font-size: 24px;
   }
   &__img-text {
     width: 32%;
@@ -81,9 +86,13 @@
     color: white;
     margin-top: 0.5rem;
     text-align: end;
+    font-size: 17px;
   }
   &__img {
     width: 100%;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__image-roll {
     display: flex;
